@@ -6,13 +6,10 @@ app.use(bodyParser.json())
 app.use(express.static('resources'));
 global.__basedir = __dirname;
  
-require('./app/routes/customer.route.js')(app);
+require('./app/routes/student.route.js')(app);
 
 // Create a Server
 var server = app.listen(8081, function () {
- 
-  var host = server.address().address
   var port = server.address().port
- 
-  console.log("Servidor: http://%s:%s", host, port) 
+  console.log("Puerto: %s ",port) 
 })

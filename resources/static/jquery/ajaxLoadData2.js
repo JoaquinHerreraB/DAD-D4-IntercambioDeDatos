@@ -1,29 +1,32 @@
 $(document).ready(function() {
 	
-	ajaxGet2();
+	ajaxGet();
 	
 	// DO GET
-	function ajaxGet2(){
+	function ajaxGet(){
 		$.ajax({
 			type : "GET",
 			url : "https://jsonplaceholder.typicode.com/users",
 			success: function(result){
-				$.each(result, function(i, customer){
+				$.each(result, function(i, user){
 					
-					var customerRow = '<tr>' +
-										'<td>' + customer.id + '</td>' +
-										'<td>' + customer.name.toUpperCase() + '</td>' +
-										'<td>' + customer.username + '</td>' +
-										'<td>' + customer.address.street + '</td>' +
-										'<td>' + customer.address.city + '</td>' +
+					var userRow = '<tr>' +
+										'<td>' + user.id + '</td>' +
+										'<td>' + user.name.toUpperCase() + '</td>' +
+										'<td>' + user.username + '</td>' +
+										'<td>' + user.email + '</td>' +
+										'<td>' + user.address.street + '</td>' +
+										'<td>' + user.address.city + '</td>' +
+										'<td>' + user.company.name + '</td>' +
+										'<td>' + user.website + '</td>' +
 									  '</tr>';
 					
-					$('#customerTable tbody').append(customerRow);
+					$('#userTable tbody').append(userRow);
 					
 		        });
 				
-				$( "#customerTable tbody tr:odd" ).addClass("info");
-				$( "#customerTable tbody tr:even" ).addClass("success");
+				$( "#userTable tbody tr:odd" ).addClass("info");
+				$( "#userTable tbody tr:even" ).addClass("success");
 			},
 			error : function(e) {
 				alert("ERROR: ", e);

@@ -2,28 +2,27 @@ $(document).ready(function() {
 	
 	ajaxGet();
 	
-	// DO GET
 	function ajaxGet(){
 		$.ajax({
 			type : "GET",
-			url : window.location + "api/customers/all",
+			url : window.location + "api/students/all",
 			success: function(result){
-				$.each(result, function(i, customer){
+				$.each(result, function(i, student){
 					
-					var customerRow = '<tr>' +
-										'<td>' + customer.id + '</td>' +
-										'<td>' + customer.name.toUpperCase() + '</td>' +
-										'<td>' + customer.age + '</td>' +
-										'<td>' + customer.address.street + '</td>' +
-										'<td>' + customer.address.city + '</td>' +
+					var studentRow = '<tr>' +
+										'<td>' + student.id + '</td>' +
+										'<td>' + student.codigo  + '</td>' +
+										'<td>' + student.apel +','+student.nomb  + '</td>' +
+										'<td>' + student.facultad.nombre + '</td>' +
+										'<td>' + student.nota + '</td>' +
 									  '</tr>';
 					
-					$('#customerTable tbody').append(customerRow);
+					$('#studentTable tbody').append(studentRow);
 					
 		        });
 				
-				$( "#customerTable tbody tr:odd" ).addClass("info");
-				$( "#customerTable tbody tr:even" ).addClass("success");
+				$( "#studentTable tbody tr:odd" ).addClass("info");
+				$( "#studentTable tbody tr:even" ).addClass("success");
 			},
 			error : function(e) {
 				alert("ERROR: ", e);
