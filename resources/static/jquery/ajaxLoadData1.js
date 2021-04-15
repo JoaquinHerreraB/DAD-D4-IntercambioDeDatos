@@ -15,7 +15,7 @@ $(document).ready(function() {
 										'<td>' + customer.name.toUpperCase() + '</td>' +
 										'<td>' + customer.age + '</td>' +
 										'<td>' + customer.address.street + '</td>' +
-										'<td>' + customer.address.postcode + '</td>' +
+										'<td>' + customer.address.city + '</td>' +
 									  '</tr>';
 					
 					$('#customerTable tbody').append(customerRow);

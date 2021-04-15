@@ -2,47 +2,47 @@
 var customers = [
 	{
 		id: 1,
-		name: "Jack",
-		age: 25,
+		name: "Miguel",
+		age: 22,
 		address:{
-			street: "NANTERRE CT",
-			postcode: "77471"
+			street: "Av. Fauccet",
+			city: "San Miguel"
 		}
 	},
 	{
 		id: 2,
-		name: "Mary",
-		age: 37,
+		name: "Giancarlo",
+		age: 19,
 		address:{
-			street: "W NORMA ST",
-			postcode: "77009"
+			street: "Av. Colonial",
+			city: "San Martín"
 		}
 	},
 	{
 		id: 3,
-		name: "Peter",
+		name: "Anita",
 		age: 17,
 		address:{
-			street: "S NUGENT AVE",
-			postcode: "77571"
+			street: "Calle Minos",
+			city: "Cadiz"
 		}
 	},
 	{
 		id: 4,
-		name: "Amos",
-		age: 23,
+		name: "Cecilia",
+		age: 22,
 		address:{
-			street: "E NAVAHO TRL",
-			postcode: "77449"
+			street: "Av. Colonial",
+			city: "Callao"
 		}
 	},
 	{
 		id: 5,
-		name: "Craig",
+		name: "Jorge",
 		age: 45,
 		address: {
-			street: "AVE N",
-			postcode: "77587"
+			street: "Cale Las Americas",
+			city: "Arilo"
 		}
 	}
 ]
