@@ -12,8 +12,13 @@ module.exports = function(app) {
 		next();
 	});
 	
+
 	app.get('/', (req,res) => {
 		res.sendFile(path + "index.html");
+	});
+
+	app.get('/2', (req,res) => {
+		res.sendFile(path + "pruebapublico.html");
 	});
  
     // Retrieve all Customers
@@ -21,7 +26,5 @@ module.exports = function(app) {
 	
 	app.use("/",router);
  
-	app.use("*", (req,res) => {
-		res.sendFile(path + "404.html");
-	});
+
 }
