@@ -22,7 +22,7 @@ $(document).ready(function() {
 		        });
 				
 				$( "#studentTable tbody tr:odd" ).addClass("warning");
-				$( "#studentTable tbody tr:even" ).addClass("light");
+				$( "#studentTable tbody tr:even" ).addClass("danger");
 			},
 			error : function(e) {
 				alert("ERROR: ", e);
