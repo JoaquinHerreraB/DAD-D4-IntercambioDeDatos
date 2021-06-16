@@ -26,7 +26,7 @@ $(document).ready(function() {
 		        });
 				
 				$( "#userTable tbody tr:odd" ).addClass("info");
-				$( "#userTable tbody tr:even" ).addClass("success");
+				$( "#userTable tbody tr:even" ).addClass("primary");
 			},
 			error : function(e) {
 				alert("ERROR: ", e);
