@@ -69,6 +69,10 @@ var students= [
 	
 ]
 
-exports.getAll = (req, res) => {
-res.send(students); 
-};
+	exports.getAll = (req, res) => {
+	res.send(students); 
+	};
+
+	exports.insert = (req, res) => {
+	students.push(req)
+	};
