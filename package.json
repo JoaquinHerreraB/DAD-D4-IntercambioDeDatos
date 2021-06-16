@@ -1,4 +1,4 @@
-{
+{ 
   "name": "nodejs-express-ajax-jquery-bootstrap-table",
   "version": "1.0.0",
   "description": "Build NodeJS-Express web-app that loads data on view using Bootstrap Table + Ajax JQuery",
