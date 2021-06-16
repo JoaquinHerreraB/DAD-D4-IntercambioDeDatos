@@ -21,8 +21,8 @@ $(document).ready(function() {
 					
 		        });
 				
-				$( "#studentTable tbody tr:odd" ).addClass("info");
-				$( "#studentTable tbody tr:even" ).addClass("success");
+				$( "#studentTable tbody tr:odd" ).addClass("warning");
+				$( "#studentTable tbody tr:even" ).addClass("light");
 			},
 			error : function(e) {
 				alert("ERROR: ", e);

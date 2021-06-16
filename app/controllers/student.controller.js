@@ -2,10 +2,10 @@
 var students= [
 	{
 		id: 1,
-		codigo: "15200182",
-		apel: "Flores Zamora",
-		nomb: "Miguel",
-		nota: 13.221,
+		codigo: "17201182",
+		apel: "Humberto Caceres",
+		nomb: "Luisa",
+		nota: 15.144,
 		facultad:{
 			codigo: "200",
 			nombre: "F. de Ingeniería e Informática"
@@ -13,10 +13,10 @@ var students= [
 	},
 	{
 		id: 2,
-		codigo: "10200203",
-		apel: "Garcia Perez",
-		nomb: "Alejandro",
-		nota: 14.129,
+		codigo: "17200403",
+		apel: "Marca Flores",
+		nomb: "Joseph",
+		nota: 17.152,
 		facultad:{
 			codigo: "200",
 			nombre: "F. de Ingeniería e Informática"
@@ -24,10 +24,10 @@ var students= [
 	},
 	{
 		id: 3,
-		codigo: "11201194",
-		apel: "Mendoza Li",
-		nomb: "Ariana",
-		nota: 15.911,
+		codigo: "15201141",
+		apel: "Lazaro Hernandez",
+		nomb: "Joel",
+		nota: 12.541,
 		facultad:{
 			codigo: "201",
 			nombre: "F. de Ingeniería e Informática"
@@ -35,9 +35,9 @@ var students= [
 	},
 	{
 		id: 4,
-		codigo: "17201981",
-		apel: "Aliaga Marca",
-		nomb: "Cesar",
+		codigo: "19201100",
+		apel: "Aliaga Daza",
+		nomb: "Alex",
 		nota: 10.782,
 		facultad:{
 			codigo: "201",
@@ -46,9 +46,9 @@ var students= [
 	},
 	{
 		id: 5,
-		codigo: "14200164",
-		apel: "Vaca Guevara",
-		nomb: "Francisco",
+		codigo: "17200114",
+		apel: "Ibañez Santander",
+		nomb: "Cecilia",
 		nota: 13.221,
 		facultad:{
 			codigo: "200",
@@ -57,8 +57,8 @@ var students= [
 	},
 	{
 		id: 6,
-		codigo: "19200012",
-		apel: "Guerror Sanchez",
+		codigo: "14200442",
+		apel: "Guerrereo Sanchez",
 		nomb: "Tomas",
 		nota: 19.172,
 		facultad:{
